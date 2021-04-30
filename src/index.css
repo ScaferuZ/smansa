@@ -8,3 +8,11 @@
 .nav__secondary {
   @apply hover:text-secondary transition duration-300;
 }
+
+.nav__mobile {
+  @apply text-sm font-medium hover:text-secondary transition duration-300;
+}
+
+.tap__highlight {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
