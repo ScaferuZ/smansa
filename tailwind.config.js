@@ -10,6 +10,9 @@ module.exports = {
         main: "#161824",
         secondary: "#F9BF3B",
       },
+      zIndex: {
+        "-1": "-1",
+      },
     },
   },
   variants: {

@@ -11,7 +11,7 @@ function Navbar() {
   Navbar.handleClickOutside = () => setMenu(false);
 
   return (
-    <nav className="tap__highlight font-Poppins bg-main text-white">
+    <nav className="tap__highlight fixed left-0 right-0 font-Poppins bg-main text-white">
       <div className="flex justify-between mx-auto py-5 px-3 sm:px-3 md:px-5 lg:px-32">
         {/* nav kiri */}
         <div className="font-bold text-lg">
@@ -39,13 +39,9 @@ function Navbar() {
               <span>Akademik</span>
               <AiOutlineDown className="text-base" />
             </Link>
-            <div className="group hidden absolute items-center text-left space-y-3 pt-8 bg-main pl-2 pr-10 py-3 group-hover:block">
-              <Link className="block whitespace-nowrap hover:text-secondary transition duration-300">
-                Peserta Didik
-              </Link>
-              <Link className="block whitespace-nowrap hover:text-secondary transition duration-300">
-                Jadwal Pelajaran
-              </Link>
+            <div className="nav__dropdown">
+              <Link className="nav__dropdownmenu">Peserta Didik</Link>
+              <Link className="nav__dropdownmenu">Jadwal Pelajaran</Link>
             </div>
           </div>
           <Link to="/" className="nav__secondary">
