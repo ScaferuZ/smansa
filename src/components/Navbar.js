@@ -7,8 +7,6 @@ import onClickOutside from "react-onclickoutside";
 function Navbar() {
   // toggle mobile nav menu
   const [menu, setMenu] = useState(false);
-  // hover dropdown
-  const [nav, setNav] = useState(false);
   // click outside mobile nav close
   Navbar.handleClickOutside = () => setMenu(false);
 
@@ -33,25 +31,22 @@ function Navbar() {
           <Link to="/" className="nav__secondary">
             Profil Sekolah
           </Link>
-          <div
-            className="items-center space-x-2"
-            onMouseEnter={() => setNav(!nav)}
-            onMouseLeave={() => setNav(nav)}
-          >
-            <Link to="/" className="nav__secondary flex items-center space-x-2">
-              <h1>Akademik</h1>
+          <div className="group inline-block relative">
+            <Link
+              to="/"
+              className="nav__secondary inline-flex items-center space-x-2"
+            >
+              <span>Akademik</span>
               <AiOutlineDown className="text-base" />
             </Link>
-            {nav && (
-              <div className="absolute text-left space-y-3 mt-7 bg-main pl-2 pr-10 py-3">
-                <Link className="block hover:text-secondary transition duration-300">
-                  Peserta Didik
-                </Link>
-                <Link className="block hover:text-secondary transition duration-300">
-                  Jadwal Pelajaran
-                </Link>
-              </div>
-            )}
+            <div className="group hidden absolute items-center text-left space-y-3 pt-8 bg-main pl-2 pr-10 py-3 group-hover:block">
+              <Link className="block whitespace-nowrap hover:text-secondary transition duration-300">
+                Peserta Didik
+              </Link>
+              <Link className="block whitespace-nowrap hover:text-secondary transition duration-300">
+                Jadwal Pelajaran
+              </Link>
+            </div>
           </div>
           <Link to="/" className="nav__secondary">
             Berita

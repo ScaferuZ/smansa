@@ -13,7 +13,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+      transitionProperty: ["group-hover"],
+    },
   },
   plugins: [],
 };
