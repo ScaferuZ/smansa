@@ -13,6 +13,9 @@ module.exports = {
       zIndex: {
         "-1": "-1",
       },
+      backgroundImage: (theme) => ({
+        "hero-smansa": "url('./img/hero.svg')",
+      }),
     },
   },
   variants: {

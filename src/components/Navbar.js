@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <nav className="tap__highlight fixed left-0 right-0 font-Poppins bg-main text-white">
-      <div className="flex justify-between mx-auto py-5 px-3 sm:px-3 md:px-5 lg:px-32">
+      <div className="flex justify-between mx-auto py-4 px-3 sm:px-3 md:px-5 lg:px-32">
         {/* nav kiri */}
         <div className="font-bold text-lg">
           <Link
