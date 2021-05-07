@@ -1,6 +1,6 @@
 import React from "react";
 
-const STYLES = ["btn--primary", "btn--secondary"];
+const STYLES = ["btn--primary", "btn--primary--outlined", "btn--secondary"];
 
 const SIZES = ["btn--medium", "btn--small"];
 

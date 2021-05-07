@@ -43,9 +43,21 @@
 }
 
 .btn--primary {
-  @apply text-white bg-main bg-opacity-80 border-0;
+  @apply text-white bg-main bg-opacity-90 border-0 focus:outline-none;
+}
+
+.btn--primary--outlined {
+  @apply text-white border-2 border-white focus:outline-none;
+}
+
+.btn--secondary {
+  @apply text-main bg-secondary border-0 focus:outline-none;
 }
 
 .btn--medium {
-  @apply px-5 py-3 text-base;
+  @apply px-6 py-3 text-base w-80;
+}
+
+.btn--small {
+  @apply px-4 py-2 text-sm;
 }

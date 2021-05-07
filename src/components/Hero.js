@@ -9,7 +9,14 @@ function Hero() {
         <h1 className="font-bold text-6xl">
           SMA NEGERI 1 <br /> BANJARBARU
         </h1>
-        <Button> Hey lol</Button>
+        <Button
+          type="button"
+          buttonStyle="btn--primary"
+          buttonSize="btn--medium"
+        >
+          {" "}
+          Jelajahi SMA Negeri 1 Banjarbaru!
+        </Button>
       </div>
     </div>
   );
