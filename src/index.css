@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: "#161824";
+  --secondary: "#F9BF3B";
+}
+
 /* NAVBAR */
 .nav__secondary {
   @apply hover:text-secondary transition duration-300 px-4;
@@ -26,4 +31,21 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* HERO */
+/* BUTTON */
+
+.btn {
+  @apply font-Poppins rounded-full cursor-pointer font-normal;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn--primary {
+  @apply text-white bg-main bg-opacity-80 border-0;
+}
+
+.btn--medium {
+  @apply px-5 py-3 text-base;
+}

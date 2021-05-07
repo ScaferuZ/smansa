@@ -2,7 +2,7 @@ import React from "react";
 
 const STYLES = ["btn--primary", "btn--secondary"];
 
-const SIZES = ["btn--small", "btn--medium"];
+const SIZES = ["btn--medium", "btn--small"];
 
 export const Button = ({
   children,
@@ -11,8 +11,20 @@ export const Button = ({
   buttonStyle,
   buttonSize,
 }) => {
+  const checkButtonStyle = STYLES.includes(buttonStyle)
+    ? buttonStyle //if
+    : STYLES[0]; // else
+
+  const checkButtonSize = SIZES.includes(buttonSize)
+    ? buttonSize //if
+    : SIZES[0]; // else
+
   return (
-    <button onClick={onClick} type={type}>
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={onClick}
+      type={type}
+    >
       {children}
     </button>
   );

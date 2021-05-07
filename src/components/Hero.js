@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import { Button } from "./Button";
 
 function Hero() {
   return (
@@ -9,8 +9,8 @@ function Hero() {
         <h1 className="font-bold text-6xl">
           SMA NEGERI 1 <br /> BANJARBARU
         </h1>
+        <Button> Hey lol</Button>
       </div>
-      <button> Hey lol</button>
     </div>
   );
 }
