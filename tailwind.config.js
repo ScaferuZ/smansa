@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         main: "#161824",
         secondary: "#F9BF3B",
+        card: "#1F212E",
       },
       zIndex: {
         "-1": "-1",
