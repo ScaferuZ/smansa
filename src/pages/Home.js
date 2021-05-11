@@ -1,4 +1,5 @@
 import React from "react";
+import BlogList from "../components/BlogList";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -11,7 +12,7 @@ function Home() {
       <Hero />
       <Card />
       <Sambutan />
-      <Sambutan />
+      <BlogList />
     </div>
   );
 }
