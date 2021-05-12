@@ -7,8 +7,8 @@ function BlogList() {
         BERITA TERKINI
       </h1>
       <div className="mt-24 grid grid-cols-10 gap-6 text-left">
-        <div className="col-span-4 rounded-3xl px-5 py-10 bg-white h-96"></div>
-        <div className="col-span-3 rounded-3xl px-5 py-10 bg-black h-64">
+        <div className="col-span-4 rounded-3xl px-5 py-10 bg-secondary h-96"></div>
+        <div className="col-span-3 rounded-3xl px-5 py-10 bg-secondary h-64">
           Post 2
         </div>
         <div className="col-span-3 rounded-3xl px-5 py-10 bg-secondary h-64">
